@@ -1,13 +1,11 @@
 # Programming Fundamentals — Practice Repository
 
- **First Semester | BSIT Student (SY 2025–2026)**
-
-This repository documents my learning and hands-on practice during my first semester as a Bachelor of Science in Information Technology (BSIT) student. It focuses on building strong foundations in **Java programming** through exercises, examples, and small practice programs.
+This repository documents my learning and hands-on practice as a Bachelor of Science in Information Technology (BSIT) student. It focuses on building strong foundations in through exercises, examples, and small practice programs.
 
 ---
 
 ##  Purpose of This Repository
-- Practice core Java programming concepts
+- Practice core programming concepts
 - Reinforce lessons through hands-on coding
 - Develop problem-solving skills
 - Track my progress as a beginner programmer
