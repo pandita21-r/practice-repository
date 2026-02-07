@@ -12,6 +12,7 @@
 // Notes
 // This project is written using procedural style
 // Future improvement: refactor using Object-Oriented Programming (OOP)
+// !! Future me, APPLY OOP IF YOU MANAGED TO LEARN IT. Also, avoid to many global variables.
 
 import java.util.Scanner;
 import java.io.IOException;
