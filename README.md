@@ -1,4 +1,4 @@
-# Java Programming Fundamentals — Practice Repository
+# Programming Fundamentals — Practice Repository
 
  **First Semester | BSIT Student (SY 2025–2026)**
 
