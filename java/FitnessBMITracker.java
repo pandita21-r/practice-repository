@@ -1,5 +1,5 @@
 // 2D array practice 
-
+// Last semester activity but i apply 2D array for weight and height inputs
 import java.util.Scanner;
 import java.io.FileWriter;
 import java.io.IOException;
