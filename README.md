@@ -18,7 +18,7 @@ This repository documents my learning and hands-on practice as a Bachelor of Sci
 - Conditional statements (`if`, `if-else`, `switch`)
 - Looping constructs (`for`, `while`, `do-while`)
   - Nested loops
-- One-dimensional arrays and array traversal
+- Mutlti-dimensional arrays and array traversal
 - Methods
   - Parameters and return types
   - Method overloading
