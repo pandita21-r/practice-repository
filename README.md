@@ -26,7 +26,7 @@ This repository documents my learning and hands-on practice as a Bachelor of Sci
   - `File`
   - `FileWriter`
   - `Scanner`
-    
+- Encapsulation (OOP)    
 ---
 
 ##  Repository Contents
@@ -40,4 +40,3 @@ This repository documents my learning and hands-on practice as a Bachelor of Sci
 This repository will continue to grow as I progress through my IT program and explore more advanced programming concepts.
 
 >  *This repository reflects my learning journey as a beginner and demonstrates my commitment to consistent practice and improvement.*
->  *Object-Oriented Programming (OOP) will be added to the topics covered as I learn and apply it.*
