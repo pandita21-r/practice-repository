@@ -1,6 +1,8 @@
-// Basic Encapsulation practice
+// Basic Encapsulation practice with scanner
 
 package raymark1;
+
+import java.util.Scanner;
 
 public class TestRoom5 {
 	static class Checker{
@@ -17,7 +19,13 @@ public class TestRoom5 {
 	}
 	public static void main(String[] args) {
 		Checker c = new Checker();
-		c.setNumber(67);
-		System.out.println(c.getNumber());
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int input = sc.nextInt();
+
+        c.setNumber(input);
+        System.out.println(c.getNumber());
+		sc.close();
 	}
 }
