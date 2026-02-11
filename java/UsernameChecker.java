@@ -1,6 +1,7 @@
 // Another encapsulation practice (not fully polished, can be improved)
 // Validates a username to ensure it contains letters only.
 // Uses IllegalArgumentException if the input contains non-letter characters
+// Handle exception to avoid crashing when the input is invalid
 
 import java.util.Scanner;
 
