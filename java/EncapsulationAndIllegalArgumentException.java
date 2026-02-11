@@ -9,6 +9,7 @@ public class TestRoom2 {
         private String username;
         private int age;
 
+        // Setter for username
         public void setUsername(String username) {
             if (username.matches("[a-zA-Z]+")) {
                 this.username = username;
@@ -16,11 +17,12 @@ public class TestRoom2 {
                 throw new IllegalArgumentException("Username must contain only letters");
             }
         }
-
+        // Getter for username
         public String getUsername() {
             return username;
         }
 
+        // Setter for age
         public void setAge(int age) {
             if (age >= 18) {
                 this.age = age;
@@ -29,6 +31,7 @@ public class TestRoom2 {
             }
         }
 
+        // Getter for age
         public int getAge() {
             return age;
         }
@@ -44,6 +47,7 @@ public class TestRoom2 {
         System.out.println("Enter age:");
         int age = sc.nextInt();
 
+        // try-catch for IllegalArgumentException para hindi mag crash ang program.
         try {
             user.setUsername(username);
             user.setAge(age);
