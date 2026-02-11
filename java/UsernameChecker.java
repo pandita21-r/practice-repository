@@ -27,7 +27,11 @@ public class TestRoom1 {
         System.out.println("Enter your username (numbers is not allowed): ");
         String username = sc.nextLine();
 
-        a.usernameChecker(username);
+       try{
+        a.usernameChecker(username);   
+       } catch(IllegalArgumentException e){
+        System.out.println(e.getMessage());    
+       } 
         System.out.println(a.getUsername());
         sc.close();
     }
