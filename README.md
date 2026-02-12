@@ -26,7 +26,11 @@ This repository documents my learning and hands-on practice as a Bachelor of Sci
   - `File`
   - `FileWriter`
   - `Scanner`
-- Encapsulation (OOP)    
+- Encapsulation (OOP)
+  - `Input validation using private fields and IllegalArgumentException`
+  - `State validation using IllegalStateException`
+  - `Multi-state object lifecycle validation`
+    
 ---
 
 ##  Repository Contents
