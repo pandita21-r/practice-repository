@@ -1,3 +1,5 @@
+// Not fully safe hehe because of multiple thread acces.
+
 package package1;
 
 public class TestRoom5 {
