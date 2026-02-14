@@ -1,5 +1,5 @@
 // Not fully safe hehe because of multiple thread acces.
-
+// 2/14/26 Refactor with "synchronized" to avoid multiple thread access or race condition. It is safe now even if there is a shared mutable object hehe
 package package1;
 
 public class TestRoom5 {
@@ -12,28 +12,28 @@ public class TestRoom5 {
     static class Order{
         private OrderStatus status = OrderStatus.CREATED;
 
-        public void confirmOrder(){
+        public synchronized void confirmOrder(){
             if(status == OrderStatus.CREATED){
                status = OrderStatus.CONFIRMED;
             } else{
                 throw new IllegalStateException("Order cannot be confirmed in its current state");
             }
         }
-        public void shipOrder(){
+        public synchronized void shipOrder(){
             if(status == OrderStatus.CONFIRMED){
                 status = OrderStatus.SHIPPED;
             } else{
                 throw new IllegalStateException("Order cannot be shipped in its current state");
             }
         }
-        public void cancelOrder(){
+        public synchronized void cancelOrder(){
             if(status == OrderStatus.CREATED || status == OrderStatus.CONFIRMED){
                 status = OrderStatus.CANCELLED;
             } else{
                 throw new IllegalStateException("Order cannot be cancelled in its current state");
             }
         }
-        public OrderStatus getStatus(){
+        public synchronized OrderStatus getStatus(){
             return status;
         }
     }
