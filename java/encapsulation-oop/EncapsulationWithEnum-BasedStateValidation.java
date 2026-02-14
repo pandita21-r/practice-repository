@@ -1,5 +1,7 @@
 // Not fully safe hehe because of multiple thread acces.
 // 2/14/26 Refactor with "synchronized" to avoid multiple thread access or race condition. It is safe now even if there is a shared mutable object hehe
+// Concurrency is HARD!
+
 package package1;
 
 public class TestRoom5 {
