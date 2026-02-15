@@ -1,4 +1,4 @@
-# Notes – Raymark Pogi
+# Notes – Raymark 
 Date: 2026-02-15
 
 ---
