@@ -31,7 +31,9 @@ This repository documents my learning and hands-on practice as a Bachelor of Sci
   - `State validation using IllegalStateException`
   - `Multi-state object lifecycle validation`
 - Enum
-- Behavioral Abstraction  
+- Behavioral Abstraction
+  - `Intent-revealing abstraction`
+    
 ---
 
 ##  Repository Contents
