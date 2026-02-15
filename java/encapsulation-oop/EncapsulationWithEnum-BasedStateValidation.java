@@ -43,6 +43,8 @@ public class TestRoom5 {
         Order order = new Order();
 
         try{
+        // Behavioral Abstraction: Intent-revealing abstraction (order.shipOrder();)
+        // Expose the INTENT instead of MECHANISM.
         order.shipOrder();
         } catch(IllegalStateException e){
             System.out.println(e.getMessage());
