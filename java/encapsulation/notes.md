@@ -7,6 +7,7 @@ Date: 2026-02-15
 
 ### Encapsulation
 - I practiced **encapsulation** by keeping fields private and controlling access through **setter and getter methods**.
+- Encapsulation is not only about private fields, but about enforcing invariants and protecting object state through controlled behavior.
 - This protects internal state and enforces rules. Example: `Order` status should not be updated directly; it must follow business rules.
 
 ### Behavioral Abstraction
