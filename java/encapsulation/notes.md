@@ -1,4 +1,4 @@
-# Java Learning Notes – Raymark Pandita
+# Notes – Raymark Pogi
 Date: 2026-02-15
 
 ---
