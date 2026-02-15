@@ -74,6 +74,10 @@ Date: 2026-02-15
 
 - Synchronized methods + immutable enum constants = safe, scalable, and clean design.
 
+  ### Order State Machine + Concurrency Flow
+
+![Order State Machine](order_state_machine.png)
+
 ---
 
 ## 6. Reflection & Mental Shift
