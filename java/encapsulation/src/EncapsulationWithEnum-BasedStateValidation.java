@@ -45,6 +45,7 @@ public class TestRoom5 {
         try{
         // Behavioral Abstraction: Intent-revealing abstraction (order.shipOrder();)
         // Expose the INTENT instead of MECHANISM.
+        // It makes the main clean and not redundant
         order.shipOrder();
         } catch(IllegalStateException e){
             System.out.println(e.getMessage());
