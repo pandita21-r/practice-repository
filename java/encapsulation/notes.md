@@ -86,7 +86,7 @@ Last Update: 2026-02-15
 - Now: I understand **thread behavior**, **mutable vs immutable objects**, **atomicity**, and how **behavioral abstraction + encapsulation** can make a system safe in parallel execution.
 - Understanding **race conditions, thread confinement, and synchronized** has changed how I design objects.
 - I realize that when using reuseable mutable object, you need reset it. Remove the stale data and update the state
-  
+- If one mutating methods uses synchronized, All mutating methods should use it. Also, please future me validate first before you mutate a mutable object.  
 ---
 
 ## 7. Future Exploration
