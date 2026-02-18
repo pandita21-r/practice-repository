@@ -26,13 +26,18 @@ This repository documents my learning and hands-on practice as a Bachelor of Sci
   - `File`
   - `FileWriter`
   - `Scanner`
-- Encapsulation (OOP)
+- Encapsulation
   - `Input validation using private fields and IllegalArgumentException`
   - `State validation using IllegalStateException`
   - `Multi-state object lifecycle validation`
 - Enum
 - Behavioral Abstraction
   - `Intent-revealing abstraction`
+- Inheritance
+  - `Constructor Chaining (super)`
+  - `Method Overriding (@Override)`
+  - `Specialization`
+  - `Code Reuse`
     
 ---
 
