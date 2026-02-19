@@ -29,8 +29,7 @@ Why?
 - It ensures the object starts life in a correct state
 
 ## What super Does NOT Do
-Many beginners misunderstand this, so Sensei clarifies:
- -super does not create a new object
+super does not create a new object
  
 It refers to the existing superclass part of the object.
 
