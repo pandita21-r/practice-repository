@@ -20,3 +20,28 @@ Why?
 - Subclass wants different behavior
 - Same method name, different implementation
 - Decided at runtime
+
+## Specialization (Adding More Features)
+A subclass adds its own fields or methods.
+
+- Parent is general.
+- Child is more specific.
+
+## Code Reuse
+The superclass provides common fields and methods:
+
+name
+age
+describe() base behavior
+
+Subclasses reuse them instantly — no copy-paste.
+
+## The “IS-A” Relationship
+A core rule of inheritance:
+
+- Dog is an Animal
+- Cat is an Animal
+- Car is a Vehicle
+
+### If this sentence doesn’t make sense, then inheritance is wrong.
+- This is part of inheritance design rules.
