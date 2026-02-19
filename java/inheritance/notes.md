@@ -40,8 +40,8 @@ It refers to the existing superclass part of the object.
 It cannot be used anywhere in the constructor
 - super(...) must be the first statement.
  
-### You cannot call two super(...) constructors
-### Only one call is allowed.
+### You cannot call two super(...) constructors!
+### Only one call is allowed!
 
 ## Method Overriding (@Override)
 A subclass can replace a method from its parent.
@@ -73,5 +73,5 @@ A core rule of inheritance:
 - Cat is an Animal
 - Car is a Vehicle
 
-### If this sentence doesn’t make sense, then inheritance is wrong.
+### If this sentence doesn’t make sense, then inheritance is wrong!
 - This is part of inheritance design rules.
