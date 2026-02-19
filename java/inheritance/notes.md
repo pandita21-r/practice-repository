@@ -6,7 +6,18 @@
 - Subclass uses the keyword extends
   
 ## Constructor Chaining (super(...))
-When a subclass is created, it must call the superclass constructor.
+### What is super? (Simple Definition)
+super is a keyword in Java that refers to the superclass.
+
+It lets the subclass access:
+- The parent constructor
+- The parent’s methods
+- The parent’s variables (if not private)
+
+### Think of super as:
+“Talk to my parent class.”
+
+### When a subclass is created, it must call the superclass constructor.
 
 Why?
 - It initializes the parent’s fields
