@@ -75,3 +75,41 @@ A core rule of inheritance:
 
 ### If this sentence doesn’t make sense, then inheritance is wrong!
 - This is part of inheritance design rules.
+
+# Keywords!
+### super:
+When you create an object of a subclass, you must initialize the superclass first.
+
+### protected:
+protected allows access in
+- the same class
+- subclasses (even in other packages)
+- same package classes
+
+But NOT the whole world (unlike public).
+
+It is more open than private, but safer than public.
+
+### @Override:
+A subclass replaces a method from the parent
+- The method name is the same
+- The parameters are the same
+- The return type is compatible
+- The behavior is different (more specific)
+ 
+It does not change behavior by itself.
+
+it is a safety check.
+
+### extends:
+Used to create a subclass from a superclass.
+
+It means:
+
+“This class inherits from another class.”
+“This class is a more specific version of the superclass.”
+
+Why We Use extends
+- Because it makes code reusable and organized.
+- Without extends, you would have to repeat the same fields in every class.
+
