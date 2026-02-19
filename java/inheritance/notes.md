@@ -6,7 +6,8 @@
 - Subclass uses the keyword extends
   
 ## Constructor Chaining (super(...))
-### What is super? (Simple Definition)
+### What is super? (Simple Definition - “Talk to my parent class.”)
+
 super is a keyword in Java that refers to the superclass.
 
 It lets the subclass access:
@@ -19,8 +20,6 @@ It lets the subclass access:
 Avoid this unless necessary because:
 - Subclasses should not depend on parent internals too tightly
 - Best practice: use methods, not raw super.field
-
-### “Talk to my parent class.”
 
 ### When a subclass is created, it must call the superclass constructor.
 
