@@ -1,11 +1,11 @@
-## Biggest purpose of inheritance - "Write once in the parent, reuse everywhere in the children".
+# Biggest purpose of inheritance - "Write once in the parent, reuse everywhere in the children".
 
-# The base structure of inheritance.
+## The base structure of inheritance.
 - Superclass = general concept
 - Subclass = more specific version
 - Subclass uses the keyword extends
   
-# Constructor Chaining (super(...))
+## Constructor Chaining (super(...))
 When a subclass is created, it must call the superclass constructor.
 
 Why?
@@ -13,7 +13,7 @@ Why?
 - It respects the parent’s rules
 - It ensures the object starts life in a correct state
 
-# Method Overriding (@Override)
+## Method Overriding (@Override)
 A subclass can replace a method from its parent.
 
 Why?
