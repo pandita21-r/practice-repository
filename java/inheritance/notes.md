@@ -14,8 +14,7 @@ It lets the subclass access:
 - The parent’s methods
 - The parent’s variables (if not private)
 
-### Think of super as:
-“Talk to my parent class.”
+### “Talk to my parent class.”
 
 ### When a subclass is created, it must call the superclass constructor.
 
