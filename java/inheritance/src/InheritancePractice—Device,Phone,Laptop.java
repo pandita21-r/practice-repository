@@ -52,7 +52,7 @@ public class TestRoom9 {
         System.out.println(l.getDetails());
     }
 }
-// refactored with private final fields and Proper polymorphic usage in main
+// refactored version with private final fields and Proper polymorphic usage in main
 /* 
 public class TestRoom9 {
 
