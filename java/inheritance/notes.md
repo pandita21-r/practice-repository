@@ -15,6 +15,8 @@ It lets the subclass access:
 - The parent’s variables (if not private)
 
 ### “Talk to my parent class.”
+### Subclasses should not depend on parent internals too tightly
+### Best practice: use methods, not raw super.field
 
 ### When a subclass is created, it must call the superclass constructor.
 
