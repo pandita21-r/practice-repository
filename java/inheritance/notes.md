@@ -1,3 +1,5 @@
+### Biggest purpose of inheritance - "Write once in the parent, reuse everywhere in the children".
+
 ## The base structure of inheritance.
 - Superclass = general concept
 - Subclass = more specific version
