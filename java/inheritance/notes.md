@@ -30,9 +30,9 @@ A subclass adds its own fields or methods.
 ## Code Reuse
 The superclass provides common fields and methods:
 
-name
-age
-describe() base behavior
+- name
+- age
+- describe() base behavior
 
 Subclasses reuse them instantly — no copy-paste.
 
