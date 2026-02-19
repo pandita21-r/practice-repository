@@ -13,10 +13,14 @@ It lets the subclass access:
 - The parent constructor
 - The parent’s methods
 - The parent’s variables (if not private)
+  
+### Using super.field to Access Parent Fields
+
+Avoid this unless necessary because:
+- Subclasses should not depend on parent internals too tightly
+- Best practice: use methods, not raw super.field
 
 ### “Talk to my parent class.”
-### Subclasses should not depend on parent internals too tightly
-### Best practice: use methods, not raw super.field
 
 ### When a subclass is created, it must call the superclass constructor.
 
