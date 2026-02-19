@@ -28,6 +28,22 @@ Why?
 - It respects the parent’s rules
 - It ensures the object starts life in a correct state
 
+## What super Does NOT Do
+Many beginners misunderstand this, so Sensei clarifies:
+ -super does not create a new object
+ 
+It refers to the existing superclass part of the object.
+
+ It is not like this
+- this = current class
+- super = parent class
+
+It cannot be used anywhere in the constructor
+- super(...) must be the first statement.
+ 
+### You cannot call two super(...) constructors
+### Only one call is allowed.
+
 ## Method Overriding (@Override)
 A subclass can replace a method from its parent.
 
