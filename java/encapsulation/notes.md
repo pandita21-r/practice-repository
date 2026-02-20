@@ -1,7 +1,18 @@
 # Notes – Raymark 
-Last Update: 2026-02-19
+Last Update: 2026-02-20
 
 ---
+
+# Professional Rule
+
+##Visibility order (from strongest to weakest exposure):
+
+- private → only this class
+- protected → this class + subclasses
+- package-private → this package
+- public → everyone
+
+##You choose the minimum necessary visibility!
 
 ## 1. Core OOP Concepts Practiced
 
