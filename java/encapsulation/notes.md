@@ -12,7 +12,7 @@ Last Update: 2026-02-20
 - package-private → this package
 - public → everyone
 
-##You choose the minimum necessary visibility!
+## You choose the minimum necessary visibility!
 
 ## 1. Core OOP Concepts Practiced
 
