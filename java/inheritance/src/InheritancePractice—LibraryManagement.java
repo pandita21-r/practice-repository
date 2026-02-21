@@ -33,7 +33,7 @@ public class TestRoom9 {
     static abstract class LibraryItem {
         private final String title;
         private final String itemId;
-        private boolean isBorrowed;
+        private volatile boolean isBorrowed;
 
         LibraryItem(String title, String itemId) {
             if (title == null || title.isBlank()) {
@@ -47,14 +47,14 @@ public class TestRoom9 {
             this.isBorrowed = false;
         }
 
-        void borrow() {
+        public synchronized void borrow() {
             if (isBorrowed) {
                 throw new IllegalStateException("Item is already borrowed.");
             }
             this.isBorrowed = true;
         }
 
-        void returnItem() {
+        public synchronized void returnItem() {
             if (!isBorrowed) {
                 throw new IllegalStateException("Item is not currently borrowed.");
             }
