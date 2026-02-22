@@ -10,7 +10,7 @@ Last Update: 2026-02-22
 
 ## The Liskov Substitution Principle (LSP):
 
-###Objects of a superclass should be replaceable with objects of its subclasses without breaking the application or changing the expected behavior.
+### Objects of a superclass should be replaceable with objects of its subclasses without breaking the application or changing the expected behavior.
   
 ## Constructor Chaining (super(...))
 ### What is super? (Simple Definition - “Talk to my parent class.”)
