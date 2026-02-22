@@ -1,1 +1,0 @@
-pang folder lang ho
