@@ -1,3 +1,6 @@
+# Notes – Raymark 
+Last Update: 2026-02-20
+
 # Biggest purpose of inheritance - "Write once in the parent, reuse everywhere in the children".
 
 ## The base structure of inheritance.
