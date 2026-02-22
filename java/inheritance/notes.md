@@ -1,5 +1,5 @@
 # Notes – Raymark 
-Last Update: 2026-02-20
+Last Update: 2026-02-22
 
 # Biggest purpose of inheritance - "Write once in the parent, reuse everywhere in the children".
 
