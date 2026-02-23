@@ -1,5 +1,7 @@
 package package1;
 
+// Basic practice with abstract methods for overriding and enforcing different calculations.
+
 public class Main {
     static  abstract class Employee{
         private  String name;
