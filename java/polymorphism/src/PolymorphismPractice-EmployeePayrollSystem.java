@@ -1,6 +1,6 @@
 package package1;
 
-// Basic practice with abstract methods for overriding and enforcing different calculations.
+// Basic practice with abstract methods for overriding and enforcing new different calculations.
 
 public class Main {
     static  abstract class Employee{
