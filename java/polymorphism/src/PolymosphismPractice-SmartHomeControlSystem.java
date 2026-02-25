@@ -1,6 +1,3 @@
-// NOT DONE YET!
-// Uses interface and abstract classes.
-
 package package1;
 
 public class TestRoom4 {
@@ -47,8 +44,6 @@ public class TestRoom4 {
         public SmartDevice(String name, int powerUsageWatts) {
             setName(name);
             setPowerUsageWatts(powerUsageWatts);
-            this.name = name;
-            this.powerUsageWatts = powerUsageWatts;
             this.status = DevicesStatus.OFFLINE;
             this.poweredOn = false;
         }
@@ -93,17 +88,19 @@ public class TestRoom4 {
 
         @Override
         public void turnOn() {
-            if (poweredOn == true) {
+            if (poweredOn) {
                 throw new IllegalThreadStateException("Device is already ON.");
             }
+            this.poweredOn = true;
             setStatus(DevicesStatus.ACTIVE);
         }
 
         @Override
         public void turnOff() {
-            if (poweredOn == false) {
+            if (!poweredOn) {
                 throw new IllegalThreadStateException("Device is already OFF.");
             }
+            this.poweredOn = false;
             setStatus(DevicesStatus.IDLE);
         }
 
@@ -113,12 +110,12 @@ public class TestRoom4 {
 
         @Override
         public String reportState() {
-            return getDeviceType() + "\"" + getName() + "\" is" + isOn() + "(" + getStatus() + "), "
-                    + getSpecificState() + ", power = " + getPowerUsageWatts() + " W.";
+            return getDeviceType() + "\"" + getName() + "\" is " + (isOn() ? "ON" : "OFF") + " (" + getStatus() + "), "
+                    + getSpecificState() + ", power = " + getPowerUsageWatts() + "W.";
         }
     }
 
-    public class LightBulb extends SmartDevice {
+    public static class LightBulb extends SmartDevice {
         private int brightness;
         private LightMode mode;
 
@@ -126,8 +123,6 @@ public class TestRoom4 {
             super(name, powerUsageWatts);
             setBrightness(brightness);
             setMode(mode);
-            this.brightness = brightness;
-            this.mode = mode;
         }
 
         public void setBrightness(int brightness) {
@@ -146,14 +141,112 @@ public class TestRoom4 {
 
         @Override
         protected String getDeviceType() {
-            return "LightBulb";
+            return "LightBulb ";
         }
+
         @Override
-        protected String getSpecificState(){
+        protected String getSpecificState() {
             return "brightness = " + brightness + "%, " + " mode = " + mode;
         }
     }
 
+    public static class Thermostat extends SmartDevice {
+        private double targetTemperature;
+        private ThermostatMode mode;
+
+        public Thermostat(String name, int powerUsageWatts, double targetTemperature, ThermostatMode mode) {
+            super(name, powerUsageWatts);
+            setTargetTemperature(targetTemperature);
+            setMode(mode);
+        }
+
+        public void setTargetTemperature(double temp) {
+            if (!(temp >= 15.0 && temp <= 30.0)) {
+                throw new IllegalArgumentException("Temperature must be between 15.0 and 30.0.");
+            }
+            this.targetTemperature = temp;
+        }
+
+        public void setMode(ThermostatMode mode) {
+            if (mode == null) {
+                throw new IllegalArgumentException("Thermostat mode cannot be null.");
+            }
+            this.mode = mode;
+        }
+
+        @Override
+        protected String getDeviceType() {
+            return "Thermostat ";
+        }
+
+        @Override
+        protected String getSpecificState() {
+            return "temp = " + targetTemperature + "°C, mode = " + mode;
+        }
+    }
+
+    public static class SecurityCamera extends SmartDevice {
+        private boolean recording;
+        private Resolution resolution;
+
+        public SecurityCamera(String name, int powerUsageWatts, Resolution resolution) {
+            super(name, powerUsageWatts);
+            setResolution(resolution);
+        }
+
+        public void setResolution(Resolution resolution) {
+            if (resolution == null) {
+                throw new IllegalArgumentException("Resolution cannot be null.");
+            }
+            this.resolution = resolution;
+        }
+
+        public void startRecording() {
+            if (!isOn()) {
+                throw new IllegalStateException("Cannot start recording while device is OFF or OFFLINE.");
+            }
+            this.recording = true;
+        }
+
+        public void stopRecording() {
+            this.recording = false;
+        }
+
+        @Override
+        protected String getDeviceType() {
+            return "SecurityCamera ";
+        }
+
+        @Override
+        protected String getSpecificState() {
+            return "recording = " + recording + ", resolution = " + resolution;
+        }
+    }
+
     public static void main(String[] args) {
+        Controllable[] devices = new Controllable[3];
+        devices[0] = new LightBulb("Living Room", 60, 80, LightMode.WARM);
+        devices[1] = new Thermostat("Hallway", 1200, 22.0, ThermostatMode.HEATING);
+        devices[2] = new SecurityCamera("Front Door", 15, Resolution.FULL_HD);
+        for (Controllable d : devices) {
+            d.turnOn();
+        }
+
+        if (devices[0] instanceof LightBulb bulb) {
+            bulb.setBrightness(80);
+            bulb.setMode(LightMode.WARM);
+        }
+
+        if (devices[1] instanceof Thermostat thermo) {
+            thermo.setTargetTemperature(22.0);
+            thermo.setMode(ThermostatMode.HEATING);
+        }
+
+        if (devices[2] instanceof SecurityCamera camera) {
+            camera.startRecording();
+        }
+        for (Controllable c : devices) {
+            System.out.println(c.reportState());
+        }
     }
 }
