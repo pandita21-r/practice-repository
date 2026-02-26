@@ -1,6 +1,5 @@
-package package1;
 
-public class TestRoom7 {
+public class InheritancePracticeVehicleRentalSystem{
     static class Vehicle {
         protected String model;
         protected double rentalPrice;

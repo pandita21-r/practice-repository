@@ -1,6 +1,4 @@
-package package1;
-
-public class TestRoom3 {
+public class PolymorphismPracticeVehicleBrandsAndMaxSpeed{
     static class Vehicle {
         private String brand;
         private int maxSpeed;

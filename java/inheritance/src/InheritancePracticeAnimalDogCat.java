@@ -1,6 +1,5 @@
-package package1;
 
-public class TestRoom9 {
+public class InheritancePracticeAnimalDogCat{
     static class Animal {
 
         protected String name;

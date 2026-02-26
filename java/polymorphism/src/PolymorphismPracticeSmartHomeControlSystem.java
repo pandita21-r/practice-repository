@@ -1,9 +1,7 @@
 // DONE! 
 // Using interface is hard!
 
-package package1;
-
-public class TestRoom4 {
+public class PolymorphismPracticeSmartHomeControlSystem{
     public interface Controllable {
         void turnOn();
 

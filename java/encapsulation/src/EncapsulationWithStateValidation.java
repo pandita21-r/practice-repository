@@ -1,4 +1,4 @@
-public class TestRoom3 {
+public class EncapsulationWithStateValidation{
     static class Device {
         private boolean poweredOn = false;
 

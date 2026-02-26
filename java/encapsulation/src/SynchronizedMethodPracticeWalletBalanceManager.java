@@ -1,6 +1,4 @@
-package package1;
-
-public class TestRoom9 {
+public class SynchronizedMethodPracticeWalletBalanceManager {
     static class Wallet {
         private int balance = 100;
 
@@ -15,7 +13,7 @@ public class TestRoom9 {
         public synchronized void withdraw(int amount) {
             if (amount <= 0) {
                 throw new IllegalArgumentException("Amount must be greater than zero.");
-            } 
+            }
             if (amount > balance) {
                 throw new IllegalArgumentException("Not enough balance.");
             }
@@ -27,14 +25,15 @@ public class TestRoom9 {
             return balance;
         }
     }
-    public static void main(String[] args) {
-        Wallet wallet = new Wallet(); 
 
-        try{
+    public static void main(String[] args) {
+        Wallet wallet = new Wallet();
+
+        try {
             wallet.deposit(50);
             wallet.withdraw(30);
             System.out.println("\n" + wallet.getBalance());
-        } catch(IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
     }

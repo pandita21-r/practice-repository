@@ -1,6 +1,5 @@
-package package1;
 
-public class TestRoom8 {
+public class FiniteStateMachineExerciseDoorStateManagement{
     enum DoorStates {
         OPEN,
         CLOSED,

@@ -1,10 +1,8 @@
 // Basic Encapsulation practice with scanner
 
-package raymark1;
-
 import java.util.Scanner;
 
-public class TestRoom5 {
+public class Encapsulation{
 	static class Checker{
 		private int number;
 		

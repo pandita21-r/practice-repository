@@ -1,6 +1,5 @@
-package package1;
 
-public class TestRoom4 {
+public class PolymorphismPracticeAnimalSounds {
     static class Animal {
         String name;
 

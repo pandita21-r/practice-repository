@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class TestRoom1 {
+public class FitnessBMITracker{
   public static int peopleCount(Scanner sc) {
     System.out.print("How many people? ");
     int people = sc.nextInt();

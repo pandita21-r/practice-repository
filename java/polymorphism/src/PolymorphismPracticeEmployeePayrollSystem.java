@@ -1,8 +1,6 @@
-package package1;
-
 // Basic practice with abstract methods for overriding and enforcing new different calculations.
 
-public class Main {
+public class PolymorphismPracticeEmployeePayrollSystem{
     static  abstract class Employee{
         private  String name;
         private double baseSalary;

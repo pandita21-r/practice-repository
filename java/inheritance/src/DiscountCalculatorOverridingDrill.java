@@ -1,6 +1,5 @@
-package package1;
 
-public class TestRoom5 {
+public class DiscountCalculatorOverridingDrill{
     static class DiscountCalculator {
         private String name;
         private double discountPercentage;

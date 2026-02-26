@@ -27,9 +27,8 @@
  │ + getInfo():Str│  └────────────────┘  └───────────────┘
  └───────────────┘
 */
-package package1;
 
-public class TestRoom9 {
+public class InheritancePracticeLibraryManagement{
     static abstract class LibraryItem {
         private final String title;
         private final String itemId;

@@ -1,8 +1,6 @@
 // Flaw: Mixing up what should be identified in messages hehe
 
-package package1;
-
-public class TestRoom5 {
+public class TaskProcessorOverridingDrill {
     static class TaskProcessor {
         private String name;
 

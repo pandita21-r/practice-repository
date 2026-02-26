@@ -1,8 +1,7 @@
-package package1;
 
 import java.util.Scanner;
 
-public class TestRoom2 {
+public class EncapsulationWithInputValidation{
     static class User {
         private String username;
         private int age;

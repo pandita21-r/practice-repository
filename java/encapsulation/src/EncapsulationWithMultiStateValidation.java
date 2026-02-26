@@ -1,9 +1,8 @@
 // Encapsulation practice but i used string for object state
 // Don't know how to use enum yet hehe
 
-package package1;
 
-public class TestRoom4 {
+public class EncapsulationWithMultiStateValidation{
     static class Order {
         private String status = "CREATED";
 

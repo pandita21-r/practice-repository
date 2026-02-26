@@ -1,6 +1,4 @@
-package package1;
-
-public class TestRoom9 {
+public class InheritancePracticeDevicePhoneLaptop{
     static class Device {
 
         protected String brand;

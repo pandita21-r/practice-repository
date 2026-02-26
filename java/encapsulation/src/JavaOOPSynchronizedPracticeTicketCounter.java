@@ -1,6 +1,5 @@
-package package1;
 
-public class TestRoom9 {
+public class JavaOOPSynchronizedPracticeTicketCounter{
     static class TicketCounter {
         private int tickets = 10;
 

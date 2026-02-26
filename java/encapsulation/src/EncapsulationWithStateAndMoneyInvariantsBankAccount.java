@@ -1,8 +1,7 @@
 // FUTURE ME! VALIDATE FIRST BEFORE MUTATION(CHANGING A STATE OF MUTABLE OBJECT)!!!!!
 
-package package1;
 
-public class TestRoom7 {
+public class EncapsulationWithStateAndMoneyInvariantsBankAccount{
     enum AccountState {
         ACTIVE,
         INACTIVE,

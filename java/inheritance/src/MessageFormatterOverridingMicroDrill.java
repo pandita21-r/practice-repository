@@ -1,6 +1,4 @@
-package package1;
-
-public class TestRoom4 {
+public class MessageFormatterOverridingMicroDrill {
     static class MessageFormatter {
         private String prefix;
         private int maxlength;

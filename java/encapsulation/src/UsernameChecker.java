@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-public class TestRoom1 {
+public class UsernameChecker{
     static class Accounts{
         private String username;
 

@@ -1,10 +1,9 @@
 // Future me! Validate virst before mutate!
 
-package package1;
 
 import java.time.LocalTime;
 
-public class TestRoom6 {
+public class EncapsulationWithStateAndInputValidationUserSession{
     enum UserState {
         ACTIVE,
         INACTIVE

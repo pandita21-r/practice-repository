@@ -1,6 +1,5 @@
-package package1;
 
-public class TestRoom9 {
+public class PolymorphismPracticeDigitalMediaLibrary{
     static abstract class MediaItem {
         private String title;
         private double rating;
