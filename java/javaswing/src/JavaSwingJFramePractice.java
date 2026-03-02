@@ -1,3 +1,4 @@
+import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
@@ -15,6 +16,8 @@ public class JavaSwingJFramePractice {
         
         ImageIcon image = new ImageIcon("java/javaswing/Sensational.jpg"); // Create an ImageIcon "Sensational"
         frame.setIconImage(image.getImage()); // Change the icon of the framek
+        frame.getContentPane().setBackground(Color.BLACK); // Sets the color of the background
+        // frame.getContentPane().setBackground(new Color(255, 255, 255)); // Sets the color of the background using RGB or Hexidecimal color values
 
     }
 }
