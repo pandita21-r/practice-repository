@@ -1,3 +1,4 @@
+import java.awt.BorderLayout;
 import java.awt.Color;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -11,12 +12,13 @@ public class JavaSwingJPanelPractice {
         JLabel label = new JLabel();
         label.setText("Sensational");
         label.setIcon(icon);
+        label.setVerticalAlignment(JLabel.TOP);
+        label.setHorizontalAlignment(JLabel.CENTER);
 
         ImageIcon jalIcon = new ImageIcon("java/javaswing/JalIcon.jpg");
         JLabel label2 = new JLabel();
         label2.setText("Jal POGI");
         label2.setIcon(jalIcon);
-
 
         JPanel redPanel = new JPanel(); // Create the panel
         redPanel.setBackground(Color.RED); // Our color for the red panel
@@ -29,13 +31,14 @@ public class JavaSwingJPanelPractice {
         JPanel greenPanel = new JPanel(); // this is the same with the red panel but different position
         greenPanel.setBackground(Color.GREEN);
         greenPanel.setBounds(0, 250, 500,250);
+        greenPanel.setLayout(new BorderLayout()); // If set to null no need for vertical and horizontal alignment.
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null); // Sets the layout to null 'cause we are munually going to place all the components that we have
         frame.setSize(750, 750);
         frame.setVisible(true);
-        redPanel.add(label);
+        greenPanel.add(label);
         bluePanel.add(label2);
         frame.add(redPanel); // Add the red panel that we created to the frame.
         frame.add(bluePanel); // Add the blue panel that we created to the frame.
