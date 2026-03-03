@@ -38,6 +38,13 @@ This repository documents my learning and hands-on practice as a Bachelor of Sci
   - `Method Overriding (@Override)`
   - `Specialization`
   - `Code Reuse`
+- Polymorphsim
+  - `Implementing Abstract Classes`
+- Java Swing
+  - `JFrame`
+  - `JLabel`
+  - `JPanel`
+  - `JButton`
     
 ---
 
