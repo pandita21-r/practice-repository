@@ -3,7 +3,7 @@ public class Main {
 
         String[] data = { "Cat", "Dog", "Bird", "Fish" };
 
-        WriteToFile.Write(data);
+        WriteToFile.write("data.txt", data);
         System.out.println("Data successfully stored.");
     }
 }

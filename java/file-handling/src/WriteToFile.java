@@ -4,14 +4,17 @@ import java.io.IOException;
 
 public class WriteToFile {
 
-    public static void Write(String[] data) {
+    public static void write(String fileName, String[] data) {
+        if (fileName == null || fileName.isBlank()) {
+            throw new IllegalArgumentException("File name cannot be null or blank.");
+        }
         if (data == null) {
             throw new IllegalArgumentException("Data cannot be null or blank.");
         }
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("data.txt"))) {
-            for (int i = 0; i < data.length; i++) {
-                writer.write(String.format("%s", data[i]));
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+            for (String line : data) {
+                writer.write(line);
                 writer.newLine();
             }
         } catch (IOException e) {
