@@ -32,7 +32,11 @@ public class Testing {
             BufferedReader rd = new BufferedReader(reader);
             String line;
             while ((line = rd.readLine()) != null) {
-                System.out.println(line);
+                if (line.matches("[Fries]+")) {
+                    System.out.println("It works!");
+                } else {
+                    System.out.println(line);
+                }
             }
         } catch (IOException e) {
             System.out.println("An error occured" + e.getMessage());
