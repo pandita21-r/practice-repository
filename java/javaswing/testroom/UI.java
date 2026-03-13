@@ -28,7 +28,7 @@ public class UI {
         panel1.setBounds(0, 0, 140, 120);
         panel1.add(label1);
 
-        JFrame frame = new JFrame("Input");
+        JFrame frame = new JFrame("Practice");
         frame.setSize(420, 420);
         frame.setLayout(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
