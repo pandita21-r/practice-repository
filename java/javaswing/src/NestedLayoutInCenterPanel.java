@@ -10,7 +10,8 @@ import javax.swing.JLabel;
 
 public class NestedLayoutInCenterPanel {
     public static void main(String[] args) {
-
+        
+        // Labels for panels
         JLabel label1 = new JLabel("NORTH");
         JLabel label2 = new JLabel("SOUTH");
         JLabel label3 = new JLabel("EAST");
@@ -19,25 +20,25 @@ public class NestedLayoutInCenterPanel {
         JPanel northPanel = new JPanel();
         northPanel.add(label1);
         northPanel.setBackground(Color.ORANGE);
-        northPanel.setPreferredSize(new Dimension(0, 80));
+        northPanel.setPreferredSize(new Dimension(0, 80)); // Adjust only the height because this located at north area in the frame
 
         JPanel southPanel = new JPanel();
         southPanel.add(label2);
         southPanel.setBackground(Color.GREEN);
-        southPanel.setPreferredSize(new Dimension(0, 80));
+        southPanel.setPreferredSize(new Dimension(0, 80)); // The same as north panel
 
         JPanel eastPanel = new JPanel();
         eastPanel.add(label3);
         eastPanel.setBackground(Color.PINK);
-        eastPanel.setPreferredSize(new Dimension(80, 0));
+        eastPanel.setPreferredSize(new Dimension(80, 0)); // Adjust only the width because this is located at east area in the frame
 
         JPanel westPanel = new JPanel();
         westPanel.add(label4);
         westPanel.setBackground(Color.YELLOW);
-        westPanel.setPreferredSize(new Dimension(80, 0));
+        westPanel.setPreferredSize(new Dimension(80, 0)); // The same as east panel
 
         JPanel centerPanel = new JPanel();
-        centerPanel.setLayout(new GridLayout(2,2));
+        centerPanel.setLayout(new GridLayout(2,2)); // Nested layout GridLayout(2 ,2) type for our new panels below
         centerPanel.setBackground(Color.WHITE);
         centerPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 
@@ -65,6 +66,7 @@ public class NestedLayoutInCenterPanel {
         centerPanel.add(small4);
 
         JFrame frame = new JFrame();
+        // frame.setSize(420,420);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
         frame.add(northPanel, BorderLayout.NORTH);
@@ -73,6 +75,7 @@ public class NestedLayoutInCenterPanel {
         frame.add(westPanel, BorderLayout.WEST);
         frame.add(centerPanel, BorderLayout.CENTER);
         frame.pack();
+
         frame.setVisible(true);
     }
 }
