@@ -50,7 +50,7 @@ public class HorizontalBoxLayoutPractice {
 
         // "createrHorizontalGlue" para ma keep lang yung mga buttons to the left area kase this glue comes after the buttons
         // Glue creates expandable flexible space
-        // Kung may new component tayong gustong ilagay dapat sa glue dapat mauna yung glue sunod yung mga new components 
+        // Kung may new component tayong gustong ilagay, dapat unahin si glue sunod yung mga new components 
         // COMPONENT / GLUE / NEW COMPONENT !!!! 
         topBar.add(Box.createHorizontalGlue());
 
