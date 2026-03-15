@@ -21,28 +21,27 @@ public class BorderLayoutDemo {
         // Panels
         JPanel northPanel = new JPanel();
         northPanel.add(label1);
-        northPanel.setPreferredSize(new Dimension(50,50));
+        northPanel.setPreferredSize(new Dimension(0,50));
         northPanel.setBackground(Color.BLUE);
         JPanel southPanel = new JPanel();
-        southPanel.setPreferredSize(new Dimension(50,50));
+        southPanel.setPreferredSize(new Dimension(0,50));
         southPanel.add(label2);
         southPanel.setBackground(Color.RED);
         JPanel eastPanel = new JPanel();
-        eastPanel.setPreferredSize(new Dimension(50,50));
+        eastPanel.setPreferredSize(new Dimension(50,0));
         eastPanel.add(label3);
         eastPanel.setBackground(Color.MAGENTA);
         JPanel westPanel = new JPanel();
-        westPanel.setPreferredSize(new Dimension(50,50));
+        westPanel.setPreferredSize(new Dimension(50,0));
         westPanel.add(label4);
         westPanel.setBackground(Color.GREEN);
         JPanel centerPanel = new JPanel();
-        centerPanel.setPreferredSize(new Dimension(50,50));
+        // No "setPreferredSize" because its centered.
         centerPanel.add(label5);
         centerPanel.setBackground(Color.WHITE);
 
         JFrame frame = new JFrame();
         frame.setLayout(new BorderLayout());
-        frame.setSize(400,400);
         frame.setResizable(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
