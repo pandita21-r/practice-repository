@@ -27,10 +27,13 @@ public class HorizontalBoxLayoutPractice {
         topBar.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         topBar.setBackground(Color.LIGHT_GRAY);
 
+        // This is the preferred size for our button because we are using X_AXIS BoxLayout!
+        // Keeps everything neat and natural!!
+        // Do not forget to set this to the BUTTON!!!
         Dimension buttonSize = new Dimension(90, 30);
 
         JButton button1 = new JButton("File");
-        button1.setPreferredSize(buttonSize);
+        button1.setPreferredSize(buttonSize); // The "buttonSize" is the DIMENSION THAT WE CREATED ABOVE!!!
         button1.setAlignmentY(Component.CENTER_ALIGNMENT);
         JButton button2 = new JButton("Edit");
         button2.setPreferredSize(buttonSize);
@@ -45,6 +48,10 @@ public class HorizontalBoxLayoutPractice {
         topBar.add(Box.createHorizontalStrut(15));
         topBar.add(button3);
 
+        // "createrHorizontalGlue" para ma keep lang yung mga buttons to the left area kase this glue comes after the buttons
+        // Glue creates expandable flexible space
+        // Kung may new component tayong gustong ilagay dapat sa glue dapat mauna yung glue sunod yung mga new components 
+        // COMPONENT / GLUE / NEW COMPONENT !!!! 
         topBar.add(Box.createHorizontalGlue());
 
 

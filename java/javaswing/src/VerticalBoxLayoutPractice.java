@@ -28,7 +28,9 @@ public class VerticalBoxLayoutPractice {
         menuPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         JButton button1 = new JButton("Home");
-        button1.setMaximumSize(new Dimension(Integer.MAX_VALUE, 40));
+        // The "Integer.MAX_VALUE" is good here because we want the width stretch vertically compare to "X_AXIS" BoxLayout!!!
+        // Also, this allow horizontal stretching
+        button1.setMaximumSize(new Dimension(Integer.MAX_VALUE, 40)); // Width streches but the Height stay fixed. Good for BoxLayout.Y_AXIS
         button1.setAlignmentX(Component.LEFT_ALIGNMENT); // Buttons alignment!
         JButton button2 = new JButton("Profile");
         button2.setMaximumSize(new Dimension(Integer.MAX_VALUE, 40));
