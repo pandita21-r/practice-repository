@@ -31,12 +31,12 @@ public class BorderLayoutDemo {
         southPanel.setBackground(Color.RED);
         southPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         JPanel eastPanel = new JPanel();
-        eastPanel.setPreferredSize(new Dimension(200,0));
+        eastPanel.setPreferredSize(new Dimension(100,0));
         eastPanel.add(label3);
         eastPanel.setBackground(Color.MAGENTA);
         eastPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         JPanel westPanel = new JPanel();
-        westPanel.setPreferredSize(new Dimension(200,0));
+        westPanel.setPreferredSize(new Dimension(100,0));
         westPanel.add(label4);
         westPanel.setBackground(Color.GREEN);
         westPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));

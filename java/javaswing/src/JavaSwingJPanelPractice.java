@@ -43,6 +43,5 @@ public class JavaSwingJPanelPractice {
         frame.add(redPanel); // Add the red panel that we created to the frame.
         frame.add(bluePanel); // Add the blue panel that we created to the frame.
         frame.add(greenPanel); // Add the blue panel that we created to the frame.
-
     }
 }
