@@ -22,6 +22,7 @@ public class TestRoom1 {
         }
     }
 
+    @SuppressWarnings("all")
     public class UserInputUI {
         private static ArrayList<PersonalData> data = new ArrayList();
 
