@@ -1,4 +1,4 @@
-package javaswing.testroom;
+
 
 import java.awt.BorderLayout;
 import java.awt.Color;
