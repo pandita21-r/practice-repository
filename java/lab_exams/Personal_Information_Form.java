@@ -3,8 +3,8 @@ package lab_exams;
 import javax.swing.*;
 import java.awt.*;
     @SuppressWarnings("all")
-public class PersonalInformationForm extends JFrame {
-    public PersonalInformationForm() {
+public class Personal_Information_Form extends JFrame {
+    public Personal_Information_Form() {
         setTitle("Information Form SET A");
         setSize(550, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -125,6 +125,6 @@ public class PersonalInformationForm extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new PersonalInformationForm().setVisible(true));
+        SwingUtilities.invokeLater(() -> new Personal_Information_Form().setVisible(true));
     }
 }
