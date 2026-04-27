@@ -1,4 +1,4 @@
-
+package inheritance.javaswing.src;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
