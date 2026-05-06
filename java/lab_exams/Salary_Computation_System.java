@@ -74,7 +74,7 @@ public class Salary_Computation_System extends JFrame {
                 JOptionPane.showMessageDialog(null, "Please select job position", "Error", JOptionPane.ERROR_MESSAGE);
                 return;
             }
-
+            
             String salaryText = salaryField.getText().trim();
 
             if (salaryText.isEmpty()) {
