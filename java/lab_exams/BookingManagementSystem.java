@@ -3,12 +3,10 @@ package lab_exams;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.util.*;
-import java.io.*;
 
 public class BookingManagementSystem extends JFrame {
 
-    private static final String FILE_PATH = "SamalBooking.txt";
+ //    private static final String FILE_PATH = "SamalBooking.txt";
     private static final String[] COLS = {
             "Booking Number", "Customer", "Category", "Date", "Pax",
             "Destination", "Payment"
@@ -59,17 +57,27 @@ public class BookingManagementSystem extends JFrame {
         add(bottomPanel, BorderLayout.SOUTH);
 
     }
-    private void initListeners(){
+
+    private void initListeners() {
         table.getSelectionModel().addListSelectionListener(e -> {
             int row = table.getSelectedRow();
 
-            if(row == -1) return;
+            if (row == -1)
+                return;
 
-            for(int i = 0; i < fields.length; i++){
+            for (int i = 0; i < fields.length; i++) {
                 fields[i].setText(String.valueOf(model.getValueAt(row, i)));
             }
         });
-   }
+    }
+    // private void updateRecord(){
+    // int row = table.getSelectedRow();
+
+    // if(row ==-1){
+    // return;
+    // }
+    //// Object[] data = getRowData();
+    // }
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new BookingManagementSystem());
