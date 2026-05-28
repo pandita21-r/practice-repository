@@ -3,8 +3,8 @@
 print("I am printing without a new line.", end=" ")
 print("This will print on the same line.")
 
-# Printing numbers. 
-# Can also do math when printing. 
+# Printing numbers.
+# Can also do math when printing.
 
 print(3)
 print(300)

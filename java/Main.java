@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -35,6 +36,7 @@ public class Main {
             System.out.println();
         }
     }
+
     /*
      * Gets validated menu input from the user
      */
@@ -57,6 +59,7 @@ public class Main {
             }
         }
     }
+
     /*
      * Converts binary to decimal
      */
@@ -112,6 +115,7 @@ public class Main {
         System.out.println("\nDecimal value: " + decimal);
         System.out.println("-------------------------");
     }
+
     /*
      * Converts decimal to binary
      */
