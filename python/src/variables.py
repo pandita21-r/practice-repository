@@ -22,7 +22,7 @@ y = "Miss"
 z = "You"
 print(x, y, z) # <- this one!
 
-# Multiple  values to multiple variables on line
+# Multiple values to multiple variables on one line
 
 x, y, z = "Apple", "Carrot", "Banana"
 print(x, y, z)
