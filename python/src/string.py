@@ -6,9 +6,9 @@ print(a)
 
 # Multiline String
 
-str = """This is a multilne String
-This is a multilne String
-This is a multilne String"""
+str = """This is a multiline String
+This is a multiline String
+This is a multiline String"""
 
 print(str)
 
